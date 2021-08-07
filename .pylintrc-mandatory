@@ -39,6 +39,10 @@ enable=anomalous-backslash-in-string,
     method-inverse,
     method-required-super,
     method-search,
+<<<<<<< HEAD
+=======
+    missing-import-error,
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
     openerp-exception-warning,
     pointless-statement,
     pointless-string-statement,
@@ -49,7 +53,10 @@ enable=anomalous-backslash-in-string,
     relative-import,
     return-in-init,
     rst-syntax-error,
+<<<<<<< HEAD
     sql-injection,
+=======
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
     too-few-format-args,
     translation-field,
     translation-required,

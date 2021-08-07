@@ -46,6 +46,11 @@ enable=anomalous-backslash-in-string,
     method-inverse,
     method-required-super,
     method-search,
+<<<<<<< HEAD
+=======
+    missing-import-error,
+    missing-manifest-dependency,
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
     openerp-exception-warning,
     pointless-statement,
     pointless-string-statement,
@@ -56,7 +61,10 @@ enable=anomalous-backslash-in-string,
     relative-import,
     return-in-init,
     rst-syntax-error,
+<<<<<<< HEAD
     sql-injection,
+=======
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
     too-few-format-args,
     translation-field,
     translation-required,
@@ -71,7 +79,10 @@ enable=anomalous-backslash-in-string,
     deprecated-module,
     file-not-used,
     invalid-commit,
+<<<<<<< HEAD
     missing-manifest-dependency,
+=======
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
     missing-newline-extrafiles,
     missing-readme,
     no-utf8-coding-comment,
@@ -81,7 +92,10 @@ enable=anomalous-backslash-in-string,
     too-complex,
     unnecessary-utf8-coding-comment
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
 [REPORTS]
 msg-template={path}:{line}: [{msg_id}({symbol}), {obj}] {msg}
 output-format=colorized
