@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/142/13.0.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-purchase-workflow-142)
 [![Build Status](https://travis-ci.com/OCA/purchase-workflow.svg?branch=13.0)](https://travis-ci.com/OCA/purchase-workflow)
 [![codecov](https://codecov.io/gh/OCA/purchase-workflow/branch/13.0/graph/badge.svg)](https://codecov.io/gh/OCA/purchase-workflow)
@@ -154,3 +155,6 @@ OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonpr
 mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 >>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
+=======
+# odoo_13_2021
+>>>>>>> be5bec20e0660b0e90e157f20e835592ab987b25
