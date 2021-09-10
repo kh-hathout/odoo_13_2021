@@ -1,0 +1,104 @@
+<<<<<<< HEAD
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+/.venv
+/.pytest_cache
+=======
+# buildout
+tools/.*
+tools/bin
+tools/develop-eggs
+tools/eggs
+tools/etc
+tools/parts
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
+
+# C extensions
+*.so
+
+# Distribution / packaging
+<<<<<<< HEAD
+.Python
+env/
+=======
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+<<<<<<< HEAD
+*.eggs
+=======
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+<<<<<<< HEAD
+htmlcov/
+=======
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Pycharm
+.idea
+
+<<<<<<< HEAD
+# Eclipse
+.settings
+
+# Visual Studio cache/options directory
+.vs/
+.vscode
+
+# OSX Files
+.DS_Store
+
+# Django stuff:
+*.log
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+
+# Sphinx documentation
+docs/_build/
+
+# Backup files
+*~
+*.swp
+
+# OCA rules
+!static/lib/
+=======
+# Backup files
+*~
+*.swp
+>>>>>>> 18fcc5902014ed75865d65823f8200e6d67081f7
