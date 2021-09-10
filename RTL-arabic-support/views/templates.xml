@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<openerp>
+<odoo>
     <data>
         <template id="tis_web_arabic.layout" inherit_id="web.layout" name="RTL Layout">
             <xpath expr="//html/head/t" position="after">
@@ -12,4 +12,4 @@
             </xpath>
         </template>
     </data>
-</openerp>
+</odoo>
