@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<record id="mass_confirm_picking_wizard" model="ir.ui.view">
+			<field name="name">mass.confirm.picking.wizard</field>
+			<field name="model">mass.confirm.picking</field>
+			<field name="arch" type="xml">
+				<form string="Confirmation date">
+					<group>
+						<p><b>Confirm Multiple Picking</b></p>
+					</group>
+					
+					<footer>
+						<button name="action_confirm_picking" type="object" string="Confirm" class="btn btn-primary active" icon="fa-pencil-square"/>
+						<button string="Cancel" class="btn btn-danger disabled" special="cancel" icon="fa-times"/>
+					</footer>
+				</form>
+			</field>
+		</record>
+	
+	
+	<!--
+            MASS Confirmation
+        -->
+       		 <act_window name="Mass Confirm Picking"
+                res_model="mass.confirm.picking"
+                binding_model="stock.picking"
+                view_mode="form"
+                binding_views="list"
+                target="new"
+                id="bi_mass_validate_picking.mass_confirm_picking"
+                />
+               
+                
+          <act_window name="Mass Confirm Picking"
+                res_model="mass.confirm.picking"
+                binding_model="sale.order"
+                view_mode="form"
+                binding_views="list"
+                target="new"
+                id="bi_mass_validate_picking.mass_confirm_picking_for_sale"
+                />
+                
+                
+                
+           <act_window name="Mass Confirm Picking"
+                res_model="mass.confirm.picking"
+                binding_model="purchase.order"
+                view_mode="form"
+                binding_views="list"
+                target="new"
+                id="bi_mass_validate_picking.mass_confirm_picking_for_purchase"
+                />
+	
+</odoo>
