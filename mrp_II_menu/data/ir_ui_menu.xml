@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="mrp.menu_mrp_traceability" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="stock.action_production_lot_form"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('stock.group_production_lot')])]"/>
+    <field name="name">Lots/Serial Numbers</field>
+    <field name="parent_id" ref="mrp.menu_mrp_bom"/>
+    <field name="sequence">5</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mrp.menu_mrp_scrap" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="stock.action_stock_scrap"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Scrap Orders</field>
+    <field name="parent_id" ref="mrp.menu_mrp_manufacturing"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mrp.menu_mrp_production_action" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="mrp.mrp_production_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Manufacturing Orders</field>
+    <field name="parent_id" ref="mrp.menu_mrp_manufacturing"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mrp.menu_mrp_bom_form_action" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="mrp.mrp_bom_form_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Bills of Materials</field>
+    <field name="parent_id" ref="mrp.menu_mrp_bom"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mrp.menu_mrp_product_form" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="mrp.product_template_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Products</field>
+    <field name="parent_id" ref="mrp.menu_mrp_bom"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mrp.product_variant_mrp" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="mrp.mrp_product_variant_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('product.group_product_variant')])]"/>
+    <field name="name">Product Variants</field>
+    <field name="parent_id" ref="mrp.menu_mrp_bom"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mrp.menu_mrp_unbuild" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="mrp.mrp_unbuild"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Unbuild Orders</field>
+    <field name="parent_id" ref="mrp.menu_mrp_manufacturing"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.manufacturing_work_c_413eff00-db75-4bf0-a176-de78074416a3" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.work_centers_5a78fb33-54bd-49a5-b06e-3a47041578b2"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">*Work Centers</field>
+    <field name="parent_id" ref="mrp.menu_mrp_bom"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.manufacturing_routin_819241c1-92a0-487d-8ee4-5351aa5a4217" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.routings_aa90dbf3-33c2-4739-81e6-c292aa93b279"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">*Routings</field>
+    <field name="parent_id" ref="mrp.menu_mrp_bom"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.manufacturing_work_o_4583712a-91a4-4e00-9c8e-1bbf452ca026" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.work_orders_84109405-2ff2-4810-b6af-c3e89d2ddc0d"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">*Work Orders</field>
+    <field name="parent_id" ref="mrp.menu_mrp_manufacturing"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+</odoo>
