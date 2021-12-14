@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="mrp_production_view_form" model="ir.ui.view">
+            <field name="name">mrp.production.form.view</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='origin']" position="after">
+                    <field name="sale_id" string="Sale Order" attrs="{'invisible': [('sale_id', '=', False)]}" readonly="1"/>
+                    <field name="sale_line_id" string="Sale Order Line" attrs="{'invisible': [('sale_line_id', '=', False)]}" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_order_form_inh" model="ir.ui.view">
+        <field name="name">view.sale.order.view.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field eval="1" name="priority"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button"
+                    icon="fa-wrench"
+                    type="object"
+                    name="action_open_mrp_production_view">
+                    <field name="production_count" widget="statinfo" string="Manufaturing"/>
+                </button>
+            </div>
+            <xpath expr="//field[@name='order_line']/tree" position="inside">
+                <field name="count_mrp" invisible="1"/>
+                <button class="btn btn-sm btn-primary" string="MO" type="object" name="view_mrp_orders" attrs="{'invisible': [('count_mrp', '&lt;=', 0)]}"/>
+            </xpath>
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="mrp_state"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_quotation_tree_with_onboarding_inh" model="ir.ui.view">
+        <field name="name">view.sale.order.view.list.onboarding</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
+        <field eval="1" name="priority"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="after">
+                <field name="mrp_state"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_order_tree_inh" model="ir.ui.view">
+        <field name="name">view.sale.order.view.list</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field eval="1" name="priority"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="after">
+                <field name="mrp_state"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
