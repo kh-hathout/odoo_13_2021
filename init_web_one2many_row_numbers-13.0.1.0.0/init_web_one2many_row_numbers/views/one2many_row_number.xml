@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="init_web_one2many_row_numbers_assets_backend" name="init_one2many_row_number_assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script style="text/javascript" src="/init_web_one2many_row_numbers/static/src/js/pager.js"></script>
+        </xpath>
+    </template>
+
+</odoo>
