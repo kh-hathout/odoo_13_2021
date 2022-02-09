@@ -2,7 +2,7 @@
 
 {
     "name": "e-Invoice KSA | tax invoice | report | qrcode | ZATCA | vat  | electronic | einvoice | e-invoice sa | accounting | tax  | Zakat, Tax and Customs Authority | invoice ",
-    "version": "1.2",
+    "version": "1.3",
     "depends": [
         'base', 'web', 'account',
     ],
@@ -30,7 +30,10 @@
                 >>  pip install reportlab
                 
     Versions History --------------------
-    
+        * version 1.3: 27-Nov-2021
+         - update qrcode format with base64 ref:
+         https://zatca.gov.sa/ar/E-Invoicing/SystemsDevelopers/Documents/QRCodeCreation.pdf
+         
     * version 1.2 : 10-Oct-2021
         Initial version compatible with odoo 13, tax invoice report, QR code
    
@@ -43,6 +46,7 @@
         "view/partner.xml",
         "report/base_document_layout.xml",
         "report/account_move.xml",
+        "view/account_move.xml"
 
     ],
     "installable": True,

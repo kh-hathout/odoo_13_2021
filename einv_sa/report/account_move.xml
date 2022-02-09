@@ -4,7 +4,6 @@
         <template id="report_style_inherit" inherit_id="web.report_assets_common">
             <xpath expr="." position="inside">
                 <link href="/einv_sa/static/css/report_style.css" rel="stylesheet" type="text/css"/>
-                <script type="text/javascript" src="/einv_sa/static/src/js/qrcode.js"></script>
             </xpath>
         </template>
 
@@ -49,14 +48,15 @@
                     </div>
                     <div class="row">
                         <div class="col-4"><Strong>Date of Supply</Strong></div>
-                        <div class="col-4 text-center"><span t-field="doc.invoice_date_due"></span></div>
+                        <div class="col-4 text-center"><span t-field="doc.einv_sa_delivery_date"></span></div>
                         <div class="col-4 text-right"><Strong>تاريخ التوريد</Strong></div>
                     </div>
                 </div>
                 <div class="col-3">
+                     <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'%('QR', doc.einv_sa_qr_code_str, 130, 130)"   class="float-right my-1"/>
 
-                    <img t-att-src="'/report/barcode/?type=%s&amp;width=%s&amp;height=%s&amp;value=Seller : %s;Vat_Number : %s;date : %s;Total_Vat : %s;Total_Amount : %s'%('QR', 130, 130,doc.company_id.name,doc.company_id.vat,doc.invoice_date,doc.amount_tax_signed,doc.amount_total)"
-                         class="float-right my-1"/>
+<!--                    <img t-att-src="'/report/barcode/?type=%s&amp;width=%s&amp;height=%s&amp;value=Seller : %s;Vat_Number : %s;date : %s;Total_Vat : %s;Total_Amount : %s'%('QR', 130, 130,doc.company_id.name,doc.company_id.vat,doc.invoice_date,doc.amount_tax_signed,doc.amount_total)"-->
+<!--                         class="float-right my-1"/>-->
 
                 </div>
             </div>
